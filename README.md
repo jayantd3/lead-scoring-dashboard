@@ -18,7 +18,7 @@ Frontend: https://lead-scoring-dashboard.netlify.app
 ### 1. Clone the Repository
 
 bash
-git clone https://github.com/JayantGusain/lead-scoring-dashboard.git
+git clone https://github.com/jayantd3/lead-scoring-dashboard.git
 cd lead-scoring-dashboard
 
 2. Backend Setup (FastAPI)
