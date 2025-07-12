@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Lead Scoring Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack lead scoring system that predicts user intent using a machine learning model and reranks scores based on comment sentiment. Built with FastAPI (backend) and React (frontend).
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- Frontend: React.js  
+- Backend: FastAPI  
+- ML Model: Scikit-learn (Logistic Regression)  
+- Deployment: Netlify (frontend), local FastAPI server (backend)
 
-### `npm start`
+## Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Frontend: https://lead-scoring-dashboard.netlify.app
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### 1. Clone the Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+git clone https://github.com/JayantGusain/lead-scoring-dashboard.git
+cd lead-scoring-dashboard
 
-### `npm run build`
+2. Backend Setup (FastAPI)
+Navigate to the backend folder:
+cd backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+(Optional) Create a virtual environment:
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Install dependencies:
+pip install -r requirements.txt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run the FastAPI server:
+uvicorn main:app --reload
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Server will start at: http://127.0.0.1:8000
+API docs available at: http://127.0.0.1:8000/docs
 
-## Learn More
+3. Frontend Setup (React)
+Navigate to the frontend folder:
+cd ../frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install dependencies:
+npm install
 
-### Code Splitting
+Start the React app:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+App will run at: http://localhost:3000
 
-### Analyzing the Bundle Size
+Features
+- Lead scoring using ML model
+- Reranking based on comment sentiment
+- Sorted table of leads
+- Persistent data using localStorage
+- Score distribution chart using Chart.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Author
+Name: Jayant Gusain
+LinkedIn: https://linkedin.com/in/jayantgusain
+GitHub: https://github.com/jayantd3
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
